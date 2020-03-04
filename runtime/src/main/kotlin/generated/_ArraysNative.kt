@@ -277,6 +277,123 @@ public actual fun <T> Array<out T>.contentDeepToString(): String {
  * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
  */
 @SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual infix fun <T> Array<out T>.contentEquals(other: Array<out T>): Boolean {
+    return this.contentEquals(other)
+}
+
+/**
+ * Returns `true` if the two specified arrays are *structurally* equal to one another,
+ * i.e. contain the same number of the same elements in the same order.
+ * 
+ * The elements are compared for equality with the [equals][Any.equals] function.
+ * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual infix fun ByteArray.contentEquals(other: ByteArray): Boolean {
+    return this.contentEquals(other)
+}
+
+/**
+ * Returns `true` if the two specified arrays are *structurally* equal to one another,
+ * i.e. contain the same number of the same elements in the same order.
+ * 
+ * The elements are compared for equality with the [equals][Any.equals] function.
+ * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual infix fun ShortArray.contentEquals(other: ShortArray): Boolean {
+    return this.contentEquals(other)
+}
+
+/**
+ * Returns `true` if the two specified arrays are *structurally* equal to one another,
+ * i.e. contain the same number of the same elements in the same order.
+ * 
+ * The elements are compared for equality with the [equals][Any.equals] function.
+ * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual infix fun IntArray.contentEquals(other: IntArray): Boolean {
+    return this.contentEquals(other)
+}
+
+/**
+ * Returns `true` if the two specified arrays are *structurally* equal to one another,
+ * i.e. contain the same number of the same elements in the same order.
+ * 
+ * The elements are compared for equality with the [equals][Any.equals] function.
+ * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual infix fun LongArray.contentEquals(other: LongArray): Boolean {
+    return this.contentEquals(other)
+}
+
+/**
+ * Returns `true` if the two specified arrays are *structurally* equal to one another,
+ * i.e. contain the same number of the same elements in the same order.
+ * 
+ * The elements are compared for equality with the [equals][Any.equals] function.
+ * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual infix fun FloatArray.contentEquals(other: FloatArray): Boolean {
+    return this.contentEquals(other)
+}
+
+/**
+ * Returns `true` if the two specified arrays are *structurally* equal to one another,
+ * i.e. contain the same number of the same elements in the same order.
+ * 
+ * The elements are compared for equality with the [equals][Any.equals] function.
+ * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual infix fun DoubleArray.contentEquals(other: DoubleArray): Boolean {
+    return this.contentEquals(other)
+}
+
+/**
+ * Returns `true` if the two specified arrays are *structurally* equal to one another,
+ * i.e. contain the same number of the same elements in the same order.
+ * 
+ * The elements are compared for equality with the [equals][Any.equals] function.
+ * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual infix fun BooleanArray.contentEquals(other: BooleanArray): Boolean {
+    return this.contentEquals(other)
+}
+
+/**
+ * Returns `true` if the two specified arrays are *structurally* equal to one another,
+ * i.e. contain the same number of the same elements in the same order.
+ * 
+ * The elements are compared for equality with the [equals][Any.equals] function.
+ * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual infix fun CharArray.contentEquals(other: CharArray): Boolean {
+    return this.contentEquals(other)
+}
+
+/**
+ * Returns `true` if the two specified arrays are *structurally* equal to one another,
+ * i.e. contain the same number of the same elements in the same order.
+ * 
+ * The elements are compared for equality with the [equals][Any.equals] function.
+ * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
+ */
+@SinceKotlin("1.4")
 public actual infix fun <T> Array<out T>?.contentEquals(other: Array<out T>?): Boolean {
     if (this === other) return true
     if (this === null || other === null) return false
@@ -294,7 +411,7 @@ public actual infix fun <T> Array<out T>?.contentEquals(other: Array<out T>?): B
  * The elements are compared for equality with the [equals][Any.equals] function.
  * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual infix fun ByteArray?.contentEquals(other: ByteArray?): Boolean {
     if (this === other) return true
     if (this === null || other === null) return false
@@ -312,7 +429,7 @@ public actual infix fun ByteArray?.contentEquals(other: ByteArray?): Boolean {
  * The elements are compared for equality with the [equals][Any.equals] function.
  * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual infix fun ShortArray?.contentEquals(other: ShortArray?): Boolean {
     if (this === other) return true
     if (this === null || other === null) return false
@@ -330,7 +447,7 @@ public actual infix fun ShortArray?.contentEquals(other: ShortArray?): Boolean {
  * The elements are compared for equality with the [equals][Any.equals] function.
  * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual infix fun IntArray?.contentEquals(other: IntArray?): Boolean {
     if (this === other) return true
     if (this === null || other === null) return false
@@ -348,7 +465,7 @@ public actual infix fun IntArray?.contentEquals(other: IntArray?): Boolean {
  * The elements are compared for equality with the [equals][Any.equals] function.
  * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual infix fun LongArray?.contentEquals(other: LongArray?): Boolean {
     if (this === other) return true
     if (this === null || other === null) return false
@@ -366,7 +483,7 @@ public actual infix fun LongArray?.contentEquals(other: LongArray?): Boolean {
  * The elements are compared for equality with the [equals][Any.equals] function.
  * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual infix fun FloatArray?.contentEquals(other: FloatArray?): Boolean {
     if (this === other) return true
     if (this === null || other === null) return false
@@ -384,7 +501,7 @@ public actual infix fun FloatArray?.contentEquals(other: FloatArray?): Boolean {
  * The elements are compared for equality with the [equals][Any.equals] function.
  * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual infix fun DoubleArray?.contentEquals(other: DoubleArray?): Boolean {
     if (this === other) return true
     if (this === null || other === null) return false
@@ -402,7 +519,7 @@ public actual infix fun DoubleArray?.contentEquals(other: DoubleArray?): Boolean
  * The elements are compared for equality with the [equals][Any.equals] function.
  * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual infix fun BooleanArray?.contentEquals(other: BooleanArray?): Boolean {
     if (this === other) return true
     if (this === null || other === null) return false
@@ -420,7 +537,7 @@ public actual infix fun BooleanArray?.contentEquals(other: BooleanArray?): Boole
  * The elements are compared for equality with the [equals][Any.equals] function.
  * For floating point numbers it means that `NaN` is equal to itself and `-0.0` is not equal to `0.0`.
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual infix fun CharArray?.contentEquals(other: CharArray?): Boolean {
     if (this === other) return true
     if (this === null || other === null) return false
@@ -435,6 +552,87 @@ public actual infix fun CharArray?.contentEquals(other: CharArray?): Boolean {
  * Returns a hash code based on the contents of this array as if it is [List].
  */
 @SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun <T> Array<out T>.contentHashCode(): Int {
+    return this.contentHashCode()
+}
+
+/**
+ * Returns a hash code based on the contents of this array as if it is [List].
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun ByteArray.contentHashCode(): Int {
+    return this.contentHashCode()
+}
+
+/**
+ * Returns a hash code based on the contents of this array as if it is [List].
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun ShortArray.contentHashCode(): Int {
+    return this.contentHashCode()
+}
+
+/**
+ * Returns a hash code based on the contents of this array as if it is [List].
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun IntArray.contentHashCode(): Int {
+    return this.contentHashCode()
+}
+
+/**
+ * Returns a hash code based on the contents of this array as if it is [List].
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun LongArray.contentHashCode(): Int {
+    return this.contentHashCode()
+}
+
+/**
+ * Returns a hash code based on the contents of this array as if it is [List].
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun FloatArray.contentHashCode(): Int {
+    return this.contentHashCode()
+}
+
+/**
+ * Returns a hash code based on the contents of this array as if it is [List].
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun DoubleArray.contentHashCode(): Int {
+    return this.contentHashCode()
+}
+
+/**
+ * Returns a hash code based on the contents of this array as if it is [List].
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun BooleanArray.contentHashCode(): Int {
+    return this.contentHashCode()
+}
+
+/**
+ * Returns a hash code based on the contents of this array as if it is [List].
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun CharArray.contentHashCode(): Int {
+    return this.contentHashCode()
+}
+
+/**
+ * Returns a hash code based on the contents of this array as if it is [List].
+ */
+@SinceKotlin("1.4")
 public actual fun <T> Array<out T>?.contentHashCode(): Int {
     if (this === null) return 0
     var result = 1
@@ -446,7 +644,7 @@ public actual fun <T> Array<out T>?.contentHashCode(): Int {
 /**
  * Returns a hash code based on the contents of this array as if it is [List].
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun ByteArray?.contentHashCode(): Int {
     if (this === null) return 0
     var result = 1
@@ -458,7 +656,7 @@ public actual fun ByteArray?.contentHashCode(): Int {
 /**
  * Returns a hash code based on the contents of this array as if it is [List].
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun ShortArray?.contentHashCode(): Int {
     if (this === null) return 0
     var result = 1
@@ -470,7 +668,7 @@ public actual fun ShortArray?.contentHashCode(): Int {
 /**
  * Returns a hash code based on the contents of this array as if it is [List].
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun IntArray?.contentHashCode(): Int {
     if (this === null) return 0
     var result = 1
@@ -482,7 +680,7 @@ public actual fun IntArray?.contentHashCode(): Int {
 /**
  * Returns a hash code based on the contents of this array as if it is [List].
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun LongArray?.contentHashCode(): Int {
     if (this === null) return 0
     var result = 1
@@ -494,7 +692,7 @@ public actual fun LongArray?.contentHashCode(): Int {
 /**
  * Returns a hash code based on the contents of this array as if it is [List].
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun FloatArray?.contentHashCode(): Int {
     if (this === null) return 0
     var result = 1
@@ -506,7 +704,7 @@ public actual fun FloatArray?.contentHashCode(): Int {
 /**
  * Returns a hash code based on the contents of this array as if it is [List].
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun DoubleArray?.contentHashCode(): Int {
     if (this === null) return 0
     var result = 1
@@ -518,7 +716,7 @@ public actual fun DoubleArray?.contentHashCode(): Int {
 /**
  * Returns a hash code based on the contents of this array as if it is [List].
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun BooleanArray?.contentHashCode(): Int {
     if (this === null) return 0
     var result = 1
@@ -530,7 +728,7 @@ public actual fun BooleanArray?.contentHashCode(): Int {
 /**
  * Returns a hash code based on the contents of this array as if it is [List].
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun CharArray?.contentHashCode(): Int {
     if (this === null) return 0
     var result = 1
@@ -545,6 +743,105 @@ public actual fun CharArray?.contentHashCode(): Int {
  * @sample samples.collections.Arrays.ContentOperations.contentToString
  */
 @SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun <T> Array<out T>.contentToString(): String {
+    return this.contentToString()
+}
+
+/**
+ * Returns a string representation of the contents of the specified array as if it is [List].
+ * 
+ * @sample samples.collections.Arrays.ContentOperations.contentToString
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun ByteArray.contentToString(): String {
+    return this.contentToString()
+}
+
+/**
+ * Returns a string representation of the contents of the specified array as if it is [List].
+ * 
+ * @sample samples.collections.Arrays.ContentOperations.contentToString
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun ShortArray.contentToString(): String {
+    return this.contentToString()
+}
+
+/**
+ * Returns a string representation of the contents of the specified array as if it is [List].
+ * 
+ * @sample samples.collections.Arrays.ContentOperations.contentToString
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun IntArray.contentToString(): String {
+    return this.contentToString()
+}
+
+/**
+ * Returns a string representation of the contents of the specified array as if it is [List].
+ * 
+ * @sample samples.collections.Arrays.ContentOperations.contentToString
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun LongArray.contentToString(): String {
+    return this.contentToString()
+}
+
+/**
+ * Returns a string representation of the contents of the specified array as if it is [List].
+ * 
+ * @sample samples.collections.Arrays.ContentOperations.contentToString
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun FloatArray.contentToString(): String {
+    return this.contentToString()
+}
+
+/**
+ * Returns a string representation of the contents of the specified array as if it is [List].
+ * 
+ * @sample samples.collections.Arrays.ContentOperations.contentToString
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun DoubleArray.contentToString(): String {
+    return this.contentToString()
+}
+
+/**
+ * Returns a string representation of the contents of the specified array as if it is [List].
+ * 
+ * @sample samples.collections.Arrays.ContentOperations.contentToString
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun BooleanArray.contentToString(): String {
+    return this.contentToString()
+}
+
+/**
+ * Returns a string representation of the contents of the specified array as if it is [List].
+ * 
+ * @sample samples.collections.Arrays.ContentOperations.contentToString
+ */
+@SinceKotlin("1.1")
+@kotlin.internal.LowPriorityInOverloadResolution
+public actual fun CharArray.contentToString(): String {
+    return this.contentToString()
+}
+
+/**
+ * Returns a string representation of the contents of the specified array as if it is [List].
+ * 
+ * @sample samples.collections.Arrays.ContentOperations.contentToString
+ */
+@SinceKotlin("1.4")
 public actual fun <T> Array<out T>?.contentToString(): String {
     return this?.joinToString(", ", "[", "]") ?: "null"
 }
@@ -554,7 +851,7 @@ public actual fun <T> Array<out T>?.contentToString(): String {
  * 
  * @sample samples.collections.Arrays.ContentOperations.contentToString
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun ByteArray?.contentToString(): String {
     return this?.joinToString(", ", "[", "]") ?: "null"
 }
@@ -564,7 +861,7 @@ public actual fun ByteArray?.contentToString(): String {
  * 
  * @sample samples.collections.Arrays.ContentOperations.contentToString
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun ShortArray?.contentToString(): String {
     return this?.joinToString(", ", "[", "]") ?: "null"
 }
@@ -574,7 +871,7 @@ public actual fun ShortArray?.contentToString(): String {
  * 
  * @sample samples.collections.Arrays.ContentOperations.contentToString
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun IntArray?.contentToString(): String {
     return this?.joinToString(", ", "[", "]") ?: "null"
 }
@@ -584,7 +881,7 @@ public actual fun IntArray?.contentToString(): String {
  * 
  * @sample samples.collections.Arrays.ContentOperations.contentToString
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun LongArray?.contentToString(): String {
     return this?.joinToString(", ", "[", "]") ?: "null"
 }
@@ -594,7 +891,7 @@ public actual fun LongArray?.contentToString(): String {
  * 
  * @sample samples.collections.Arrays.ContentOperations.contentToString
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun FloatArray?.contentToString(): String {
     return this?.joinToString(", ", "[", "]") ?: "null"
 }
@@ -604,7 +901,7 @@ public actual fun FloatArray?.contentToString(): String {
  * 
  * @sample samples.collections.Arrays.ContentOperations.contentToString
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun DoubleArray?.contentToString(): String {
     return this?.joinToString(", ", "[", "]") ?: "null"
 }
@@ -614,7 +911,7 @@ public actual fun DoubleArray?.contentToString(): String {
  * 
  * @sample samples.collections.Arrays.ContentOperations.contentToString
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun BooleanArray?.contentToString(): String {
     return this?.joinToString(", ", "[", "]") ?: "null"
 }
@@ -624,7 +921,7 @@ public actual fun BooleanArray?.contentToString(): String {
  * 
  * @sample samples.collections.Arrays.ContentOperations.contentToString
  */
-@SinceKotlin("1.1")
+@SinceKotlin("1.4")
 public actual fun CharArray?.contentToString(): String {
     return this?.joinToString(", ", "[", "]") ?: "null"
 }
